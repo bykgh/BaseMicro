@@ -1,0 +1,19 @@
+server:
+  port: 9216
+  tomcat:
+    accesslog:
+      enabled: true
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.101.171.51:8848
+      config:
+        server-addr: 10.101.171.51:8848
+        file-extension: yaml
+        namespace: 198b2418-3a2d-4762-8033-4d93190e40fd
+        refresh-enabled: true
